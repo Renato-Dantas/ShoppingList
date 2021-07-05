@@ -13,14 +13,20 @@
             <input type="text" placeholder="Adicionar Item" id = 'searchArea'>
             <img src="./imagens/plus.png" id = 'plus' onclick="addProduct()">
         </div>
-        <div class="list"><h1>Sua Lista está Vazia!</h1></div>
+        <div class="list">
+            <h1 id = 'empty'>Sua Lista está Vazia!</h1>
+            <ul id = 'items'>
+
+            </ul>
+        </div>
+
     </main>
     <section>
         <div id="title">
             <h1>Informações</h1>
         </div>
         <div id = 'infos'>
-            <p>Número de itens na lista: </p>
+            <p id = 'nItems'>Número de itens na lista: </p>
             <p>Valor total da lista: </p>
             <p>Itens confirmados: </p> <!--Listar os nomes dos itens já confirmados-->
             <p>Valor dos itens confirmados: </p>
